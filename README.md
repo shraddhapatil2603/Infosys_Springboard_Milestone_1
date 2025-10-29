@@ -76,11 +76,6 @@ AI & Data Science | ML Engineer | Full Stack Developer
 
 ---
 
-## 📜 License
-Licensed under the **MIT License**.
-
----
-
 ## 🧾 Requirements
 Flask==3.0.3
 tensorflow==2.16.1
@@ -93,10 +88,4 @@ wikipedia-api==0.6.0
 h5py==3.11.0
 """
 
-file_path = "/mnt/data/README.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-
-file_path
 
