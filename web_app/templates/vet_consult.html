@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vet Consult - Pawdentify</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-light py-5 text-center">
+  <h1 class="text-purple fw-bold">Consult a Vet</h1>
+  <p class="text-muted">Submit your concerns and our partner vets will assist you.</p>
+
+  <form class="mx-auto" style="max-width:500px;">
+    <input type="text" class="form-control mb-3" placeholder="Your Name">
+    <input type="email" class="form-control mb-3" placeholder="Email">
+    <textarea class="form-control mb-3" rows="4" placeholder="Describe your issue..."></textarea>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawdentify | Breed Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Pawdentify 🐾</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="#">Breed Info</a>
+      <a href="#">Store</a>
+      <a href="#">Vet Consult</a>
+      <a href="#">Find Match Quiz</a>
+      <a href="#">Profile</a>
+    </div>
+  </nav>
+
+  <section class="result-page">
+    <div class="result-container">
+      <div class="image-section">
+        <img src="{{ img_path }}" alt="Dog Image" class="dog-image" />
+        <h2 class="breed-name">{{ breed.replace('_', ' ') | title }}</h2>
+        <p class="confidence">{{ confidence }}% Confidence</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Group</h3>
+          <p>{{ info.group }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Origin</h3>
+          <p>{{ info.origin }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Size</h3>
+          <p>{{ info.size }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Lifespan</h3>
+          <p>{{ info.lifespan }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Temperament</h3>
+          <p>{{ info.temperament }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Description</h3>
+          <p>{{ info.description }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Nature</h3>
+          <p>{{ info.nature }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Health Issues</h3>
+          <p>{{ info.health_issues }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Health Care</h3>
+          <p>{{ info.health_care }}</p>
+        </div>
+        <div class="info-card">
+          <h3>Food Diet</h3>
+          <p>{{ info.food_diet }}</p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="/" class="btn">Try Another</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
