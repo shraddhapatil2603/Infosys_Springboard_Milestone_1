@@ -5,32 +5,6 @@ It also provides detailed breed information such as temperament, origin, health 
 
 ---
 
-## 📁 Project Structure
-pawdentify/
-├── data/
-│   └── breed_info.json
-├── models/
-│   ├── pawdentify_cnn.h5
-│   └── class_indices.json
-├── scripts/
-│   ├── prepare_from_xls.py
-│   ├── train_model.py
-│   ├── classify_and_describe.py
-│   └── fetch_breed_info.py
-├── web_app/
-│   ├── app.py
-│   ├── templates/
-│   │   ├── index.html
-│   │   └── result.html
-│   └── static/
-│       ├── css/
-│       │   └── style.css
-│       └── uploads/
-├── venv/
-└── README.md
-
----
-
 ## 🚀 Features
 - 🐶 Upload an image and identify the dog breed instantly.  
 - 🎯 Displays breed confidence score.  
@@ -122,5 +96,6 @@ h5py==3.11.0
 file_path = "/mnt/data/README.md"
 with open(file_path, "w", encoding="utf-8") as f:
     f.write(readme_content)
+
 
 file_path
