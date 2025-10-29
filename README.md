@@ -71,7 +71,7 @@ To retrain your own CNN model:
 ---
 
 ## 🧑‍💻 Author
-**Gaurav [Your Full Name]**  
+**Shraddha Sanjiv Patil**  
 AI & Data Science | ML Engineer | Full Stack Developer
 
 ---
@@ -99,3 +99,4 @@ with open(file_path, "w", encoding="utf-8") as f:
 
 
 file_path
+
